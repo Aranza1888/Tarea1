@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="neko.calcularlaedad.controldeedad">
+   <children>
+      <Label layoutX="30.0" layoutY="20.0" text="Edad de una persona">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="30.0" layoutY="70.0" text="Fecha de nacimiento">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFechaNacimiento" layoutX="190.0" layoutY="67.0" prefWidth="180.0" promptText="dd/mm/aaaa" />
+
+      <Button fx:id="btnCalcular" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleCalcular" prefWidth="90.0" text="Calcular">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLimpiar" layoutX="160.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleLimpiar" prefWidth="90.0" text="Limpiar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+
+      <Label fx:id="lblResultado" alignment="CENTER" layoutX="30.0" layoutY="180.0" prefWidth="360.0" text="" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
